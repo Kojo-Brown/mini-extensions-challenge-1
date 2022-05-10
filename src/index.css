@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body,
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+#root {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.login-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+
+.login-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.login-error:empty {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+  padding: 0.1rem 0.25rem;
+}
+
+input {
+  padding: 0.3rem;
+}
+
+.boxes {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2rem;
+}
+
+.logout {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+#card-container {
+  align-items: flex-start;
+  border: 1px solid;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.35rem;
+  justify-content: center;
+  max-width: 25rem;
+  min-width: 20rem;
+  padding: 1rem;
+}
+
+.card-caption:not(:first-child) {
+  margin-top: 0.5rem;
+}
